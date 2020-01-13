@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Home View</title>
+    </head>
+    <body>
+        <a href="{% url 'register'%}"> Register</a><br>
+        <a href="{% url 'login'%}">Login</a> <br>
+        <p>All  users</p>
+        {%for objs in obj%}
+            {{objs}}
+        {%endfor%}
+    </body>
+</html>
